@@ -12,7 +12,7 @@ function showHint(str,str2) {
         document.getElementById("txtHint").innerHTML = this.responseText;
       }
     };
-    xmlhttp.open("GET", "frontend.php?q1=" + str + "&q2=" + str2, true);
+    xmlhttp.open("GET", "backend.php?q1=" + str + "&q2=" + str2, true);
     xmlhttp.send();
   }
 }
